@@ -1,0 +1,12 @@
+@import "../base.scss";
+@import "../component/header";
+@import "../component/footer";
+@import "../component/sliderB";
+@import "../component/video";
+
+.five-page {
+  .banner-bg {
+    background-image: url(../../static/img/video.jpg);
+  }
+}
+

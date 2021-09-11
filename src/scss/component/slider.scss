@@ -1,0 +1,128 @@
+.owl-carousel {
+  $process-width: 16px;
+  $process-border-width: 2px;
+  $process-animation-duration: 2.5s;
+  .owl-carousel-item {
+    position: relative;
+  }
+  .img-skeleton {
+    height: 0;
+  }
+  .slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .owl-dots {
+    @include layoutPadding();
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    .owl-dot.active span {
+      display: none;
+    }
+    .owl-dot:not(.active) .progress {
+      display: none;
+    }
+    @include breakpoint("md") {
+      bottom: 50px;
+    }
+  }
+
+  .progress {
+    width: $process-width;
+    height: $process-width;
+    line-height: $process-width;
+    background: none;
+    margin: 0 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &:after {
+      content: "";
+      border-radius: 50%;
+      border: $process-border-width solid #f2f5f5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .progress-loader {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-width: $process-border-width;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+      border-color: $main-red;
+    }
+
+    .progress-left {
+      left: 0;
+      .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        transform-origin: center left;
+        animation: loading-2 $process-animation-duration linear forwards $process-animation-duration;
+      }
+    }
+
+    .progress-right {
+      right: 0;
+      .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        transform-origin: center right;
+        animation: loading-1 $process-animation-duration linear forwards;
+      }
+    }
+  }
+
+  &--no-loading {
+    .progress {
+      &:after {
+        border-color: $main-red;
+      }
+    }
+  }
+
+  @keyframes loading-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes loading-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+}

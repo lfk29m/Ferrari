@@ -1,0 +1,45 @@
+.banner {
+  position: relative;
+  .banner-bg-skeleton {
+    height: 0;
+    padding-top: 300px;
+  }
+  .banner-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #1f1f1f, #69696900);
+    z-index: 1;
+  }
+  .banner-bg {
+    background-image: url(../../static/img/F2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .banner-text {
+    @include layoutPadding();
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $white;
+  }
+  .more-btn {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-left: 20px;
+    }
+  }
+}

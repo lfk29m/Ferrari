@@ -1,0 +1,28 @@
+@mixin layoutPadding($target: other) {
+  $padding-xl: 105px;
+  $padding-lg: 75px;
+  $padding-xs: 15px;
+  @if $target == container-wrap {
+    padding-left: 0;
+    padding-right: 0;
+    @include breakpoint("lg") {
+      padding-left: calc(#{$padding-lg} - 15px);
+      padding-right: calc(#{$padding-lg} - 15px);
+    }
+    @include breakpoint("xl") {
+      padding-left: calc(#{$padding-xl} - 15px);
+      padding-right: calc(#{$padding-xl} - 15px);
+    }
+  } @else {
+    padding-left: $padding-xs;
+    padding-right: $padding-xs;
+    @include breakpoint("lg") {
+      padding-left: $padding-lg;
+      padding-right: $padding-lg;
+    }
+    @include breakpoint("xl") {
+      padding-left: $padding-xl;
+      padding-right: $padding-xl;
+    }
+  }
+}

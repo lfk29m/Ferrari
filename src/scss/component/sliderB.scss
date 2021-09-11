@@ -1,0 +1,34 @@
+@import "./slider";
+.sliderB {
+  .owl-item {
+    &:first-child .slider-img{
+      clip-path: $clip-path-start;
+      border-radius: 0;
+      border-top-right-radius: 5px;
+    }
+    &:last-child .slider-img {
+      border-radius: 0;
+      border-bottom-left-radius: 5px;
+      clip-path: $clip-path-end;
+    }
+    @for $i from 2 through 10 {
+      &:nth-child(#{$i}) .slider-img{
+        transform: translateX( ($i - 1) * -20%);
+      }
+    }
+  }
+  .owl-carousel-item {
+    width: 60vw;
+    max-height: 600px;
+  }
+  .img-skeleton {
+    padding-top: 75%;
+  }
+  .slider-img {
+    clip-path: $clip-path-middle; //中間的
+    border-radius: 5px;
+  }
+  .owl-dot:not(.active) span{
+    background-color: #ffff;
+  }
+}

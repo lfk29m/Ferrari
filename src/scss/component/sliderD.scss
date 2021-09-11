@@ -1,0 +1,114 @@
+@import "./slider";
+.sliderD {
+  background-color: $black;
+  color: $white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__info {
+    @include layoutPadding();
+    display: flex;
+    justify-content: center;
+    @include breakpoint("md") {
+      justify-content: space-between;
+    }
+    &__title {
+    }
+    &__line {
+      width: 1px;
+      height: 25px;
+      margin-top: 5px;
+      background-color: $white;
+      @include breakpoint("md") {
+        width: 150px;
+        height: 1px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .owl-nav {
+    display: flex;
+  }
+  .owl-prev,
+  .owl-next {
+    display: none;
+    background-color: $black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 0.5rem;
+    border-style: none;
+    & span {
+      opacity: 0;
+    }
+    @include breakpoint("md") {
+      display: block;
+    }
+  }
+  .owl-prev {
+    background-image: url(../../static/img/nav-left.png);
+    margin-right: 20px;
+  }
+  .owl-next {
+    background-image: url(../../static/img/nav-right.png);
+  }
+
+  .owl-carousel {
+    @include layoutPadding();
+    padding-right: 0 !important;
+    padding-bottom: 50px;
+    .owl-dots {
+      bottom: 0;
+    }
+  }
+  .owl-carousel-item {
+    position: relative;
+    width: 300px;
+    @include breakpoint("md") {
+      width: 400px;
+    }
+  }
+  .img-skeleton {
+    padding-top: 100%;
+  }
+  .slider-img {
+    border-radius: 5px;
+  }
+  .slider-title {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  .slider-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, #1f1f1f, #69696900);
+    z-index: 1;
+  }
+  .more-btn {
+    @include layoutPadding();
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    bottom: -40px;
+    @include breakpoint("md") {
+      left: auto;
+      right: 0;
+      bottom: 0;
+    }
+
+    img {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-left: 20px;
+    }
+  }
+
+}
