@@ -66,7 +66,7 @@ module.exports = (env) => {
     entry,
     output: {
       filename: 'js/[name].js',
-      path: resolve(__dirname, 'build'),
+      path: resolve(__dirname, 'docs'),
     },
     module: {
       rules: [
