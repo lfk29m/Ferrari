@@ -8758,7 +8758,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)( /*#__PURE__*/_babel_runtime_corejs3_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee() {
-  var owlB, owlD;
+  var owlD;
   return _babel_runtime_corejs3_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -8767,13 +8767,18 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
           return _lib_slot_js__WEBPACK_IMPORTED_MODULE_2__.default.init();
 
         case 2:
-          owlB = new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
+          new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             loop: false,
             autoplay: false,
             autoWidth: true,
             items: 1
-          });
-          owlB.init('#sliderB-1');
+          }).init('#sliderB-1');
+          new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
+            loop: false,
+            autoplay: false,
+            autoWidth: true,
+            items: 1
+          }).init('#sliderB-2');
           owlD = new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             loop: false,
             autoplay: false,

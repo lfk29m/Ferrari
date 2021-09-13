@@ -536,6 +536,25 @@ a:hover {
 }
 
 .footer {
+  color: rgba(255,255,255,1);
+  background-color: black;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+.footer .footer-info {
+  word-break: break-all;
+  color: #dae0e5;
+}
+.footer .footer-info p {
+  color: rgba(255,255,255,1);
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .footer .footer-info p {
+    margin-bottom: 20px;
+  }
+}
+.footer .footer-icon-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,15 +726,10 @@ a:hover {
   }
 }
 
-.sliderA {
+.sliderC {
   padding-bottom: 50px;
 }
-@media only screen and (min-width: 768px) {
-  .sliderA {
-    padding-bottom: 0;
-  }
-}
-.sliderA .slider-title {
+.sliderC .slider-title {
   padding-left: 15px;
   padding-right: 15px;
   font-size: 1.2rem;
@@ -723,44 +737,53 @@ a:hover {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  .sliderA .slider-title {
+  .sliderC .slider-title {
     padding-left: 75px;
     padding-right: 75px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .sliderA .slider-title {
+  .sliderC .slider-title {
     padding-left: 105px;
     padding-right: 105px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .sliderA .slider-title {
+  .sliderC .slider-title {
     text-align: left;
     font-size: 1.5rem;
   }
 }
-.sliderA .img-skeleton {
+.sliderC .img-skeleton {
   padding-top: 66%;
 }
-.sliderA .slider-img {
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 24.5% 0.5%);
-          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 24.5% 0.5%);
-  border-bottom-left-radius: 5px;
+.sliderC .slider-img {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
+  border-top-right-radius: 5px;
 }
-.sliderA .owl-dots.owl-dots {
+.sliderC .owl-dots.owl-dots {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 0;
 }
 @media only screen and (min-width: 768px) {
-  .sliderA .owl-dots.owl-dots {
+  .sliderC .owl-dots.owl-dots {
     bottom: 50px;
     left: 0;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+.sliderC .more-btn {
+  font-size: 0.8rem;
+}
+.sliderC .more-btn p {
+  color: #DA291C;
+}
+.sliderC .more-btn img {
+  width: 0.6rem;
 }
 
 .owl-carousel .owl-carousel-item {

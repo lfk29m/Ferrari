@@ -7545,9 +7545,9 @@ module.exports = parent;
 
 /***/ }),
 
-/***/ "./src/scss/page/fourth.scss":
+/***/ "./src/scss/page/second.scss":
 /*!***********************************!*\
-  !*** ./src/scss/page/fourth.scss ***!
+  !*** ./src/scss/page/second.scss ***!
   \***********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -8335,50 +8335,6 @@ try {
 
 /***/ }),
 
-/***/ "./src/static/img/I1.jpg":
-/*!*******************************!*\
-  !*** ./src/static/img/I1.jpg ***!
-  \*******************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "static/img/I1.jpg";
-
-/***/ }),
-
-/***/ "./src/static/img/I2.jpg":
-/*!*******************************!*\
-  !*** ./src/static/img/I2.jpg ***!
-  \*******************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "static/img/I2.jpg";
-
-/***/ }),
-
-/***/ "./src/static/img/I3.jpg":
-/*!*******************************!*\
-  !*** ./src/static/img/I3.jpg ***!
-  \*******************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "static/img/I3.jpg";
-
-/***/ }),
-
-/***/ "./src/static/img/I4.jpg":
-/*!*******************************!*\
-  !*** ./src/static/img/I4.jpg ***!
-  \*******************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "static/img/I4.jpg";
-
-/***/ }),
-
 /***/ "./src/static/img/logo-black.png":
 /*!***************************************!*\
   !*** ./src/static/img/logo-black.png ***!
@@ -8423,6 +8379,17 @@ module.exports = __webpack_require__.p + "static/img/menu.png";
 
 /***/ }),
 
+/***/ "./src/static/img/open.jpg":
+/*!*********************************!*\
+  !*** ./src/static/img/open.jpg ***!
+  \*********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "static/img/open.jpg";
+
+/***/ }),
+
 /***/ "./src/static/img/share.png":
 /*!**********************************!*\
   !*** ./src/static/img/share.png ***!
@@ -8431,6 +8398,17 @@ module.exports = __webpack_require__.p + "static/img/menu.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "static/img/share.png";
+
+/***/ }),
+
+/***/ "./src/static/img/sign.png":
+/*!*********************************!*\
+  !*** ./src/static/img/sign.png ***!
+  \*********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "static/img/sign.png";
 
 /***/ }),
 
@@ -8683,9 +8661,9 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
-/*!**************************!*\
-  !*** ./src/js/fourth.js ***!
-  \**************************/
+/*!************************!*\
+  !*** ./src/js/open.js ***!
+  \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs3_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs3/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs3/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _babel_runtime_corejs3_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs3/regenerator */ "./node_modules/@babel/runtime-corejs3/regenerator/index.js");
@@ -8693,18 +8671,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_slot_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/slot.js */ "./src/js/lib/slot.js");
 /* harmony import */ var _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/owl.js */ "./src/js/lib/owl.js");
 /* harmony import */ var _static_reset_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/reset.css */ "./src/static/reset.css");
-/* harmony import */ var _scss_page_fourth_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../scss/page/fourth.scss */ "./src/scss/page/fourth.scss");
+/* harmony import */ var _scss_page_second_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../scss/page/second.scss */ "./src/scss/page/second.scss");
 /* harmony import */ var _static_img_logo_white_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/img/logo-white.png */ "./src/static/img/logo-white.png");
 /* harmony import */ var _static_img_logo_white_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../static/img/logo-white.svg */ "./src/static/img/logo-white.svg");
 /* harmony import */ var _static_img_logo_black_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../static/img/logo-black.png */ "./src/static/img/logo-black.png");
 /* harmony import */ var _static_img_menu_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/img/menu.png */ "./src/static/img/menu.png");
 /* harmony import */ var _static_img_share_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/img/share.png */ "./src/static/img/share.png");
-/* harmony import */ var _static_img_I1_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/img/I1.jpg */ "./src/static/img/I1.jpg");
-/* harmony import */ var _static_img_I2_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../static/img/I2.jpg */ "./src/static/img/I2.jpg");
-/* harmony import */ var _static_img_I3_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../static/img/I3.jpg */ "./src/static/img/I3.jpg");
-/* harmony import */ var _static_img_I4_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../static/img/I4.jpg */ "./src/static/img/I4.jpg");
-
-
+/* harmony import */ var _static_img_open_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/img/open.jpg */ "./src/static/img/open.jpg");
+/* harmony import */ var _static_img_sign_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../static/img/sign.png */ "./src/static/img/sign.png");
 
 
 
@@ -8777,4 +8751,4 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
 }();
 /******/ })()
 ;
-//# sourceMappingURL=fourth.js.map
+//# sourceMappingURL=open.js.map

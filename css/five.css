@@ -536,6 +536,25 @@ a:hover {
 }
 
 .footer {
+  color: rgba(255,255,255,1);
+  background-color: black;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+.footer .footer-info {
+  word-break: break-all;
+  color: #dae0e5;
+}
+.footer .footer-info p {
+  color: rgba(255,255,255,1);
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .footer .footer-info p {
+    margin-bottom: 20px;
+  }
+}
+.footer .footer-icon-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
