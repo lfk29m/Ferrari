@@ -2220,11 +2220,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 var Owl = /*#__PURE__*/function () {
   function Owl(config) {
-    var sliderImgList = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
-
     (0,_babel_runtime_corejs3_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_6__.default)(this, Owl);
 
-    this.sliderImgList = sliderImgList;
     this.config = _objectSpread({
       loop: true,
       margin: 10,
@@ -2239,24 +2236,22 @@ var Owl = /*#__PURE__*/function () {
     value: function init(target) {
       console.log(target, this.config);
       this.target = target;
-      var owl = $("".concat(this.target, " .owl-carousel")).owlCarousel(this.config);
-      this.setImg();
+      var owl = $("".concat(this.target, " .owl-carousel")).owlCarousel(this.config); // this.setImg()
+
       this.listen(owl);
       this.setDots();
       return owl;
-    }
-  }, {
-    key: "setImg",
-    value: function setImg() {
-      var sliderImgList = this.sliderImgList,
-          config = this.config;
-      if (this.sliderImgList.length == 0) return;
-      $("".concat(this.target, " .slider-img")).each(function (i) {
-        var modifyIndex = config.loop ? i + 1 : i;
-        var index = modifyIndex % sliderImgList.length;
-        $(this).attr('src', sliderImgList[index]);
-      });
-    }
+    } // setImg() {
+    //   const sliderImgList = this.sliderImgList,
+    //     config = this.config
+    //   if (this.sliderImgList.length == 0) return
+    //   $(`${this.target} .slider-img`).each(function (i) {
+    //     const modifyIndex = config.loop ? (i + 1) : i
+    //     const index = modifyIndex % sliderImgList.length
+    //     $(this).attr('src', sliderImgList[index])
+    //   })
+    // }
+
   }, {
     key: "listen",
     value: function listen(owl) {

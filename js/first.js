@@ -2220,11 +2220,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 var Owl = /*#__PURE__*/function () {
   function Owl(config) {
-    var sliderImgList = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
-
     (0,_babel_runtime_corejs3_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_6__.default)(this, Owl);
 
-    this.sliderImgList = sliderImgList;
     this.config = _objectSpread({
       loop: true,
       margin: 10,
@@ -2239,24 +2236,22 @@ var Owl = /*#__PURE__*/function () {
     value: function init(target) {
       console.log(target, this.config);
       this.target = target;
-      var owl = $("".concat(this.target, " .owl-carousel")).owlCarousel(this.config);
-      this.setImg();
+      var owl = $("".concat(this.target, " .owl-carousel")).owlCarousel(this.config); // this.setImg()
+
       this.listen(owl);
       this.setDots();
       return owl;
-    }
-  }, {
-    key: "setImg",
-    value: function setImg() {
-      var sliderImgList = this.sliderImgList,
-          config = this.config;
-      if (this.sliderImgList.length == 0) return;
-      $("".concat(this.target, " .slider-img")).each(function (i) {
-        var modifyIndex = config.loop ? i + 1 : i;
-        var index = modifyIndex % sliderImgList.length;
-        $(this).attr('src', sliderImgList[index]);
-      });
-    }
+    } // setImg() {
+    //   const sliderImgList = this.sliderImgList,
+    //     config = this.config
+    //   if (this.sliderImgList.length == 0) return
+    //   $(`${this.target} .slider-img`).each(function (i) {
+    //     const modifyIndex = config.loop ? (i + 1) : i
+    //     const index = modifyIndex % sliderImgList.length
+    //     $(this).attr('src', sliderImgList[index])
+    //   })
+    // }
+
   }, {
     key: "listen",
     value: function listen(owl) {
@@ -8737,6 +8732,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)( /*#__PURE__*/_babel_runtime_corejs3_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee() {
+  var owlD;
   return _babel_runtime_corejs3_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -8750,15 +8746,36 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
             autoplay: false,
             autoWidth: true,
             items: 1
-          }, [_static_img_F1_jpg__WEBPACK_IMPORTED_MODULE_10__, _static_img_F2_jpg__WEBPACK_IMPORTED_MODULE_11__, _static_img_F3_jpg__WEBPACK_IMPORTED_MODULE_12__]).init('#sliderB-1');
+          }).init('#sliderB-1');
           new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             loop: false,
             autoplay: false,
             autoWidth: true,
             items: 1
-          }, [_static_img_F4_jpg__WEBPACK_IMPORTED_MODULE_13__, _static_img_F5_jpg__WEBPACK_IMPORTED_MODULE_14__, _static_img_F6_jpg__WEBPACK_IMPORTED_MODULE_15__]).init('#sliderB-2');
+          }).init('#sliderB-2');
+          owlD = new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
+            loop: false,
+            autoplay: false,
+            autoWidth: true,
+            margin: 20,
+            nav: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 2
+              }
+            }
+          });
+          owlD.init('#sliderD-1');
+          $('#sliderD-1 .sliderD__info').append($('#sliderD-1 .owl-nav'));
+          $('#sliderD-1 .owl-carousel').append($('#sliderD-1 .more-btn'));
 
-        case 4:
+        case 8:
         case "end":
           return _context.stop();
       }
