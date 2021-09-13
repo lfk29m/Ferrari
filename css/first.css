@@ -460,6 +460,48 @@ a:hover {
   margin: 2rem 0;
 }
 
+.load-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  z-index: 9999;
+  -webkit-animation: fade 1s 1s forwards;
+          animation: fade 1s 1s forwards;
+}
+.load-mask__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: fade 1s 0.5s forwards;
+          animation: fade 1s 0.5s forwards;
+}
+.load-mask__icon img {
+  width: 50px;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .header {
   position: relative;
   display: -webkit-box;

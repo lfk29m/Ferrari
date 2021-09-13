@@ -1512,12 +1512,7 @@ a:hover {
 }
 .video-banner .banner-bg-skeleton {
   height: 0;
-  padding-top: 300px;
-}
-@media only screen and (min-width: 768px) {
-  .video-banner .banner-bg-skeleton {
-    padding-top: 600px;
-  }
+  padding-top: 56%;
 }
 .video-banner .banner-mask {
   position: absolute;
@@ -1529,7 +1524,7 @@ a:hover {
   z-index: 1;
 }
 .video-banner .banner-bg {
-  background-image: url(../static/img/F1.jpg);
+  background-image: url(../static/img/video.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

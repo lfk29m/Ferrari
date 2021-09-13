@@ -460,6 +460,48 @@ a:hover {
   margin: 2rem 0;
 }
 
+.load-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  z-index: 9999;
+  -webkit-animation: fade 1s 1s forwards;
+          animation: fade 1s 1s forwards;
+}
+.load-mask__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: fade 1s 0.5s forwards;
+          animation: fade 1s 0.5s forwards;
+}
+.load-mask__icon img {
+  width: 50px;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .header {
   position: relative;
   display: -webkit-box;
@@ -1050,12 +1092,7 @@ a:hover {
 }
 .video-banner .banner-bg-skeleton {
   height: 0;
-  padding-top: 300px;
-}
-@media only screen and (min-width: 768px) {
-  .video-banner .banner-bg-skeleton {
-    padding-top: 600px;
-  }
+  padding-top: 56%;
 }
 .video-banner .banner-mask {
   position: absolute;
@@ -1067,7 +1104,7 @@ a:hover {
   z-index: 1;
 }
 .video-banner .banner-bg {
-  background-image: url(../static/img/F1.jpg);
+  background-image: url(../static/img/video.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1112,10 +1149,6 @@ a:hover {
   height: 4rem;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.five-page .banner-bg {
-  background-image: url(../static/img/video.jpg);
 }
 
 /*# sourceMappingURL=five.css.map*/
