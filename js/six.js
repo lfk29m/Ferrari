@@ -8346,17 +8346,6 @@ module.exports = __webpack_require__.p + "static/img/c1.jpg";
 
 /***/ }),
 
-/***/ "./src/static/img/c11.jpg":
-/*!********************************!*\
-  !*** ./src/static/img/c11.jpg ***!
-  \********************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "static/img/c11.jpg";
-
-/***/ }),
-
 /***/ "./src/static/img/c2.jpg":
 /*!*******************************!*\
   !*** ./src/static/img/c2.jpg ***!
@@ -8368,17 +8357,6 @@ module.exports = __webpack_require__.p + "static/img/c2.jpg";
 
 /***/ }),
 
-/***/ "./src/static/img/c21.jpg":
-/*!********************************!*\
-  !*** ./src/static/img/c21.jpg ***!
-  \********************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "static/img/c21.jpg";
-
-/***/ }),
-
 /***/ "./src/static/img/c3.jpg":
 /*!*******************************!*\
   !*** ./src/static/img/c3.jpg ***!
@@ -8387,17 +8365,6 @@ module.exports = __webpack_require__.p + "static/img/c21.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "static/img/c3.jpg";
-
-/***/ }),
-
-/***/ "./src/static/img/c31.jpg":
-/*!********************************!*\
-  !*** ./src/static/img/c31.jpg ***!
-  \********************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "static/img/c31.jpg";
 
 /***/ }),
 
@@ -8431,6 +8398,39 @@ module.exports = __webpack_require__.p + "static/img/c5.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "static/img/c6.jpg";
+
+/***/ }),
+
+/***/ "./src/static/img/c7.jpg":
+/*!*******************************!*\
+  !*** ./src/static/img/c7.jpg ***!
+  \*******************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "static/img/c7.jpg";
+
+/***/ }),
+
+/***/ "./src/static/img/c8.jpg":
+/*!*******************************!*\
+  !*** ./src/static/img/c8.jpg ***!
+  \*******************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "static/img/c8.jpg";
+
+/***/ }),
+
+/***/ "./src/static/img/c9.jpg":
+/*!*******************************!*\
+  !*** ./src/static/img/c9.jpg ***!
+  \*******************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "static/img/c9.jpg";
 
 /***/ }),
 
@@ -8766,15 +8766,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_img_red_more_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/img/red-more.png */ "./src/static/img/red-more.png");
 /* harmony import */ var _static_img_menu_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/img/menu.png */ "./src/static/img/menu.png");
 /* harmony import */ var _static_img_share_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/img/share.png */ "./src/static/img/share.png");
-/* harmony import */ var _static_img_c11_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../static/img/c11.jpg */ "./src/static/img/c11.jpg");
-/* harmony import */ var _static_img_c21_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../static/img/c21.jpg */ "./src/static/img/c21.jpg");
-/* harmony import */ var _static_img_c31_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../static/img/c31.jpg */ "./src/static/img/c31.jpg");
-/* harmony import */ var _static_img_c1_jpg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../static/img/c1.jpg */ "./src/static/img/c1.jpg");
-/* harmony import */ var _static_img_c2_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../static/img/c2.jpg */ "./src/static/img/c2.jpg");
-/* harmony import */ var _static_img_c3_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../static/img/c3.jpg */ "./src/static/img/c3.jpg");
-/* harmony import */ var _static_img_c4_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../static/img/c4.jpg */ "./src/static/img/c4.jpg");
-/* harmony import */ var _static_img_c5_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../static/img/c5.jpg */ "./src/static/img/c5.jpg");
-/* harmony import */ var _static_img_c6_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../static/img/c6.jpg */ "./src/static/img/c6.jpg");
+/* harmony import */ var _static_img_c1_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../static/img/c1.jpg */ "./src/static/img/c1.jpg");
+/* harmony import */ var _static_img_c2_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../static/img/c2.jpg */ "./src/static/img/c2.jpg");
+/* harmony import */ var _static_img_c3_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../static/img/c3.jpg */ "./src/static/img/c3.jpg");
+/* harmony import */ var _static_img_c4_jpg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../static/img/c4.jpg */ "./src/static/img/c4.jpg");
+/* harmony import */ var _static_img_c5_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../static/img/c5.jpg */ "./src/static/img/c5.jpg");
+/* harmony import */ var _static_img_c6_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../static/img/c6.jpg */ "./src/static/img/c6.jpg");
+/* harmony import */ var _static_img_c7_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../static/img/c7.jpg */ "./src/static/img/c7.jpg");
+/* harmony import */ var _static_img_c8_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../static/img/c8.jpg */ "./src/static/img/c8.jpg");
+/* harmony import */ var _static_img_c9_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../static/img/c9.jpg */ "./src/static/img/c9.jpg");
 
 
 

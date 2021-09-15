@@ -975,6 +975,11 @@ a:hover {
 .sliderC .img-skeleton {
   padding-top: 66%;
 }
+@media only screen and (min-width: 1200px) {
+  .sliderC .img-skeleton {
+    padding-top: 700px;
+  }
+}
 .sliderC .slider-img {
   -webkit-clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
@@ -1319,6 +1324,23 @@ a:hover {
   width: 1.8rem;
   height: 1.8rem;
   margin-left: 20px;
+}
+
+.first-page .sliderB {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .first-page .sliderB {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .first-page .sliderB {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
 }
 
 /*# sourceMappingURL=first.css.map*/

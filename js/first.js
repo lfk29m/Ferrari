@@ -8776,7 +8776,7 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
             autoplay: false,
             autoWidth: true,
             items: 1
-          }).init('#sliderB-2');
+          }).init('#sliderB-1');
           owlD = new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             loop: false,
             autoplay: false,

@@ -8767,18 +8767,6 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
           return _lib_slot_js__WEBPACK_IMPORTED_MODULE_2__.default.init();
 
         case 2:
-          new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
-            loop: false,
-            autoplay: false,
-            autoWidth: true,
-            items: 1
-          }).init('#sliderB-1');
-          new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
-            loop: false,
-            autoplay: false,
-            autoWidth: true,
-            items: 1
-          }).init('#sliderB-2');
           owlD = new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             loop: false,
             autoplay: false,
@@ -8801,7 +8789,7 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
           $('#sliderD-1 .sliderD__info').append($('#sliderD-1 .owl-nav'));
           $('#sliderD-1 .owl-carousel').append($('#sliderD-1 .more-btn'));
 
-        case 8:
+        case 6:
         case "end":
           return _context.stop();
       }

@@ -366,9 +366,9 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/scss/page/second.scss ***!
-  \*******************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/scss/page/open.scss ***!
+  \*****************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "custom-sans-woff";
   src: url(../static/font/Ferrari-SansMedium.woff), url(../static/font/Ferrari-SansRegular.woff);
@@ -765,6 +765,11 @@ a:hover {
 .sliderC .img-skeleton {
   padding-top: 66%;
 }
+@media only screen and (min-width: 1200px) {
+  .sliderC .img-skeleton {
+    padding-top: 700px;
+  }
+}
 .sliderC .slider-img {
   -webkit-clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
@@ -1109,6 +1114,10 @@ a:hover {
   width: 1.8rem;
   height: 1.8rem;
   margin-left: 20px;
+}
+
+.open-page .sliderC .slider-title {
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=open.css.map*/

@@ -765,6 +765,11 @@ a:hover {
 .sliderC .img-skeleton {
   padding-top: 66%;
 }
+@media only screen and (min-width: 1200px) {
+  .sliderC .img-skeleton {
+    padding-top: 700px;
+  }
+}
 .sliderC .slider-img {
   -webkit-clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
