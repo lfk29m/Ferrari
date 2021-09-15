@@ -8773,10 +8773,10 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
           owlC.init('#sliderC-1');
           new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             margin: 0,
-            loop: true,
+            loop: false,
             autoplay: false,
-            autoWidth: true,
-            items: 1
+            autoWidth: false,
+            items: 2
           }).init('#sliderB-1');
           owlD = new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             loop: false,
