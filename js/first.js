@@ -8772,7 +8772,8 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
           });
           owlC.init('#sliderC-1');
           new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
-            loop: false,
+            margin: 0,
+            loop: true,
             autoplay: false,
             autoWidth: true,
             items: 1

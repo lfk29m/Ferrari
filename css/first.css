@@ -729,67 +729,13 @@ a:hover {
   }
 }
 
-.sliderB .owl-item:first-child .slider-img {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%);
-  border-radius: 0;
-  border-top-right-radius: 5px;
-}
-.sliderB .owl-item:last-child .slider-img {
-  border-radius: 0;
-  border-bottom-left-radius: 5px;
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 24.5% 0.5%);
-          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 24.5% 0.5%);
-}
-.sliderB .owl-item:nth-child(2) .slider-img {
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
-}
-.sliderB .owl-item:nth-child(3) .slider-img {
-  -webkit-transform: translateX(-40%);
-          transform: translateX(-40%);
-}
-.sliderB .owl-item:nth-child(4) .slider-img {
-  -webkit-transform: translateX(-60%);
-          transform: translateX(-60%);
-}
-.sliderB .owl-item:nth-child(5) .slider-img {
-  -webkit-transform: translateX(-80%);
-          transform: translateX(-80%);
-}
-.sliderB .owl-item:nth-child(6) .slider-img {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-.sliderB .owl-item:nth-child(7) .slider-img {
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-}
-.sliderB .owl-item:nth-child(8) .slider-img {
-  -webkit-transform: translateX(-140%);
-          transform: translateX(-140%);
-}
-.sliderB .owl-item:nth-child(9) .slider-img {
-  -webkit-transform: translateX(-160%);
-          transform: translateX(-160%);
-}
-.sliderB .owl-item:nth-child(10) .slider-img {
-  -webkit-transform: translateX(-180%);
-          transform: translateX(-180%);
-}
 .sliderB .owl-carousel-item {
   width: 60vw;
-  max-width: 800px;
+  max-width: 1120px;
   min-width: 300px;
-  max-height: 600px;
 }
 .sliderB .img-skeleton {
   padding-top: 66%;
-}
-.sliderB .slider-img {
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%, 24.5% 0.5%);
-          clip-path: polygon(25% 0%, 100% 0%, 75.5% 99.5%, 75% 100%, 0% 100%, 24.5% 0.5%);
-  border-radius: 5px;
 }
 .sliderB .owl-dot:not(.active) span {
   background-color: rgba(255,255,255,1);
@@ -1324,23 +1270,6 @@ a:hover {
   width: 1.8rem;
   height: 1.8rem;
   margin-left: 20px;
-}
-
-.first-page .sliderB {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media only screen and (min-width: 992px) {
-  .first-page .sliderB {
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .first-page .sliderB {
-    padding-left: 105px;
-    padding-right: 105px;
-  }
 }
 
 /*# sourceMappingURL=first.css.map*/
