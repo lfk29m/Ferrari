@@ -8775,8 +8775,18 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
             margin: 0,
             loop: false,
             autoplay: false,
-            autoWidth: false,
-            items: 2
+            items: 2,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 1
+              },
+              1000: {
+                items: 2
+              }
+            }
           }).init('#sliderB-1');
           owlD = new _lib_owl_js__WEBPACK_IMPORTED_MODULE_3__.default({
             loop: false,
