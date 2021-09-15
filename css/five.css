@@ -565,6 +565,9 @@ a:hover {
   background-color: black;
 }
 
+.owl-carousel .owl-stage-outer {
+  max-height: 700px;
+}
 .owl-carousel .owl-carousel-item {
   position: relative;
 }
@@ -792,6 +795,9 @@ a:hover {
   background-color: rgba(255,255,255,1);
 }
 
+.owl-carousel .owl-stage-outer {
+  max-height: 700px;
+}
 .owl-carousel .owl-carousel-item {
   position: relative;
 }

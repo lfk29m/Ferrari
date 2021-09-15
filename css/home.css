@@ -523,6 +523,9 @@ a:hover {
   background-color: black;
 }
 
+.owl-carousel .owl-stage-outer {
+  max-height: 700px;
+}
 .owl-carousel .owl-carousel-item {
   position: relative;
 }
@@ -740,6 +743,9 @@ a:hover {
   }
 }
 
+.owl-carousel .owl-stage-outer {
+  max-height: 700px;
+}
 .owl-carousel .owl-carousel-item {
   position: relative;
 }
@@ -947,6 +953,9 @@ a:hover {
   background-color: rgba(255,255,255,1);
 }
 
+.owl-carousel .owl-stage-outer {
+  max-height: 700px;
+}
 .owl-carousel .owl-carousel-item {
   position: relative;
 }
@@ -1091,6 +1100,11 @@ a:hover {
 .sliderC {
   padding-bottom: 50px;
 }
+@media only screen and (min-width: 768px) {
+  .sliderC {
+    padding-bottom: 0;
+  }
+}
 .sliderC .slider-title {
   padding-left: 15px;
   padding-right: 15px;
@@ -1148,6 +1162,9 @@ a:hover {
   width: 0.6rem;
 }
 
+.owl-carousel .owl-stage-outer {
+  max-height: 700px;
+}
 .owl-carousel .owl-carousel-item {
   position: relative;
 }
