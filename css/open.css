@@ -443,6 +443,28 @@ body > main {
             column-count: 2;
   }
 }
+.article-content--sub {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .article-content--sub {
+    display: block;
+  }
+}
+.article-content--sub.active {
+  display: block;
+}
+
+.more-btn {
+  font-size: 1.1rem;
+  display: block;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .more-btn {
+    display: none;
+  }
+}
 
 a {
   color: rgba(255,255,255,1);
@@ -1117,7 +1139,7 @@ a:hover {
 }
 
 .open-page .sliderC .slider-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=open.css.map*/
