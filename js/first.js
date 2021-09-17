@@ -2193,8 +2193,17 @@ module.exports = {
 var moreBtn = $('.more-btn'),
     subArticle = $('.article-content--sub');
 moreBtn.click(function () {
-  $(this).hide();
-  subArticle.addClass('active');
+  $(this).toggleClass('active');
+  subArticle.toggleClass('active');
+
+  if ($(this).hasClass('active')) {
+    $(this).text('Hide');
+  } else {
+    $(this).text('Read More');
+    $('html, body').animate({
+      scrollTop: 0
+    }, 300);
+  }
 });
 
 /***/ }),

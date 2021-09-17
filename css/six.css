@@ -444,19 +444,24 @@ body > main {
   }
 }
 .article-content--sub {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 @media only screen and (min-width: 768px) {
   .article-content--sub {
     display: block;
+    max-height: none;
+    overflow: unset;
   }
 }
 .article-content--sub.active {
-  display: block;
+  max-height: 4000px;
 }
 
 .more-btn {
-  font-size: 1.1rem;
+  font-size: 0.5rem;
   display: block;
   margin-top: 10px;
 }
