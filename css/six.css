@@ -431,6 +431,11 @@ body > main {
   }
 }
 
+.article-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .article-content {
   -webkit-column-count: 1;
      -moz-column-count: 1;
@@ -457,7 +462,7 @@ body > main {
   }
 }
 .article-content--sub.active {
-  max-height: 4000px;
+  max-height: 16000px;
 }
 
 .more-btn {
