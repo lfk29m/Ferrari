@@ -371,7 +371,7 @@ textarea {
   \****************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "custom-sans-woff";
-  src: url(/Ferraristatic/font/Ferrari-SansMedium.woff), url(/Ferraristatic/font/Ferrari-SansRegular.woff);
+  src: url(../static/font/Ferrari-SansMedium.woff), url(../static/font/Ferrari-SansRegular.woff);
   unicode-range: U+00-024F;
 }
 @font-face {
@@ -1049,11 +1049,11 @@ a:hover {
   }
 }
 .sliderD .owl-prev {
-  background-image: url(/Ferraristatic/img/nav-left.png);
+  background-image: url(../static/img/nav-left.png);
   margin-right: 20px;
 }
 .sliderD .owl-next {
-  background-image: url(/Ferraristatic/img/nav-right.png);
+  background-image: url(../static/img/nav-right.png);
 }
 .sliderD .owl-carousel {
   padding-left: 15px;
