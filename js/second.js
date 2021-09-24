@@ -8695,7 +8695,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","/Users/su/Desktop/work/F
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/Ferrari";
 /******/ 	}();
 /******/ 	
 /************************************************************************/

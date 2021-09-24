@@ -371,7 +371,7 @@ textarea {
   \**********************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "custom-sans-woff";
-  src: url(/static/font/Ferrari-SansMedium.woff), url(/static/font/Ferrari-SansRegular.woff);
+  src: url(/Ferraristatic/font/Ferrari-SansMedium.woff), url(/Ferraristatic/font/Ferrari-SansRegular.woff);
   unicode-range: U+00-024F;
 }
 @font-face {
