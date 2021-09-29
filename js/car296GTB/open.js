@@ -6152,6 +6152,17 @@ module.exports = __webpack_require__.p + "static/img/car296GTB/open/9.jpg";
 
 /***/ }),
 
+/***/ "./src/static/img/car296GTB/open/video.jpg":
+/*!*************************************************!*\
+  !*** ./src/static/img/car296GTB/open/video.jpg ***!
+  \*************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "static/img/car296GTB/open/video.jpg";
+
+/***/ }),
+
 /***/ "./src/static/img/car296GTB/open/首圖.jpg":
 /*!**********************************************!*\
   !*** ./src/static/img/car296GTB/open/首圖.jpg ***!
@@ -6507,7 +6518,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_img_car296GTB_open_21_jpg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../../static/img/car296GTB/open/21.jpg */ "./src/static/img/car296GTB/open/21.jpg");
 /* harmony import */ var _static_img_car296GTB_open_22_jpg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../../static/img/car296GTB/open/22.jpg */ "./src/static/img/car296GTB/open/22.jpg");
 /* harmony import */ var _static_img_car296GTB_open_23_jpg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../../static/img/car296GTB/open/23.jpg */ "./src/static/img/car296GTB/open/23.jpg");
-/* harmony import */ var _static_video_car296GTB_open_1_mp4__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../../static/video/car296GTB/open/影片1.mp4 */ "./src/static/video/car296GTB/open/影片1.mp4");
+/* harmony import */ var _static_img_car296GTB_open_video_jpg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../../static/img/car296GTB/open/video.jpg */ "./src/static/img/car296GTB/open/video.jpg");
+/* harmony import */ var _static_video_car296GTB_open_1_mp4__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../../static/video/car296GTB/open/影片1.mp4 */ "./src/static/video/car296GTB/open/影片1.mp4");
+
 
 
 
@@ -6545,11 +6558,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)( /*#__PURE__*/_babel_runtime_corejs3_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee() {
-  var sliderC_config;
+  var DOM_sliderC1_title, origin_sliderC1_title, init, sliderC_config;
   return _babel_runtime_corejs3_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
+          init = function _init() {
+            if ($(window).width() <= 768) {
+              DOM_sliderC1_title.html('選配的藝術<br>打造獨一無二的Ferrari 296 GTB');
+            } else {
+              DOM_sliderC1_title.html(origin_sliderC1_title);
+            }
+          };
+
+          DOM_sliderC1_title = $('#sliderC-1 .slider-title'), origin_sliderC1_title = DOM_sliderC1_title.html();
+          $(window).resize(function () {
+            init();
+          });
+          init();
           sliderC_config = {
             animateOut: 'fadeOut',
             mouseDrag: false,
@@ -6576,7 +6602,7 @@ $(document).ready( /*#__PURE__*/(0,_babel_runtime_corejs3_helpers_asyncToGenerat
           new _lib_owl_js__WEBPACK_IMPORTED_MODULE_2__.default(sliderC_config).init('#sliderC-8');
           new _lib_owl_js__WEBPACK_IMPORTED_MODULE_2__.default(sliderC_config).init('#sliderC-9');
 
-        case 10:
+        case 14:
         case "end":
           return _context.stop();
       }

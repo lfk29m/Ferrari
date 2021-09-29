@@ -1098,6 +1098,17 @@ li {
   margin-left: 20px;
 }
 
+.car296GTB-page #sliderC-1 .sliderC {
+  padding-bottom: 0;
+}
+.car296GTB-page #sliderC-6 .slider-title {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .car296GTB-page #sliderC-6 .slider-title {
+    display: block;
+  }
+}
 .car296GTB-page .footer {
   padding-top: 50px;
 }

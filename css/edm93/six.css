@@ -1099,6 +1099,7 @@ li {
 }
 
 .six-page .mail-link {
+  font-size: 0.8rem;
   color: black;
 }
 .six-page .mail-link:hover {
